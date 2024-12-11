@@ -1,17 +1,17 @@
 # Incident
-I was creating a Linux mint external disk due to the company I was working at the time. The company, in their infinite wisdom, decided it was a good idea to restrict everything possible on the PC such as uploading, downloading, viewing files, viewing websites, restricting installations of nearly every program in existence, so on and so forth.
+I was creating a Linux Mint external disk due to the company I was working at the time. The company, in their infinite wisdom, decided it was a good idea to restrict everything possible on the PC such as uploading, downloading, viewing files, viewing websites, restricting installations of nearly every program in existence, so on and so forth.
 
 Therefore I thought it was prudent to create my own external disk I could boot into so I can bypass all of the security measures and still access the files within the local PC (which for some reason was not encrypted). 
 
 Everything went well until I was at the installation phase of the process where instead of installing the GRUB loader on the external drive, I fat fingered it on the local drive.
 
-This caused me to erroneously believe that there were two bootloaders on the local drive and I deleted the main EFI bootloader off the local drive. This caused not only grub loader to disappear, but also Windows boot manager as well.
+This caused me to erroneously believe that there were two bootloaders on the local drive and I deleted the main EFI bootloader off the local drive. This caused not only GRUB loader to disappear, but also Windows boot manager as well.
 
 # Issue
-Windows boot manager was completely removed from my disk causing the BIOS to believe that there were no bootable disks within the PC. Not only does this cause the disk to become a "dead" disk, but it also causes live windows USB to not properly detect where the existing windows installation is.
+Windows boot manager was completely removed from my disk causing the BIOS to believe that there were no bootable disks within the PC. Not only does this cause the disk to become a "dead" disk, but it also causes live Windows USB to not properly detect where the existing Windows installation is.
 
 # Solution
-After an ungodly amount of time trudging through the cursed lands of microsoft forums and the toxic swamps of corporate solution sites, I managed to find one particular source that explained how to remake the windows boot manager from a live Windows USB. The process is as follows:
+After an ungodly amount of time trudging through the cursed lands of Microsoft forums and the toxic swamps of corporate solution sites, I managed to find one particular source that explained how to remake the Windows boot manager from a live Windows USB. The process is as follows:
 
 1. Create a live Windows USB of the same type of the "dead" Windows installation.
 
