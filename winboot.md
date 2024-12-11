@@ -41,3 +41,7 @@ Once these steps are complete, shutdown the system, unplug the USB and pray to w
 # Remarks
 
 This is the first documented case of a monument that I created. This is a remainder that I am an idiot and that some things just happen because I failed to pay attention. I hope whoever sees this can swiftly solve their issues and proceed with their day, for this consumed one entirety of mine. 
+
+# Sources
+
+ - [Aomei](https://www.diskpart.com/windows-10/missing-efi-partition-windows-10.html)
